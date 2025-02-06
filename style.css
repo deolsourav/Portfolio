@@ -1,0 +1,364 @@
+@font-face{
+    font-family: golden_way;
+    src: url('golden_way.ttf') format('truetype');
+}
+@font-face{
+    font-family: arial;
+    src: url('arial/ARIAL.TTF') format('truetype');
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    
+}
+html,body{
+    width: 100%;
+    /* height: 100vh; */
+
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #ffcc00;
+    position: fixed;
+    border-radius: 50%;
+    transition: all ease 0.1s
+    
+    
+}
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: #faf8f027;
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(50px);
+    
+    
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./valentin-jorel-0Jlc6wdDhzM-unsplash.jpg);
+    background-size: cover;
+}
+nav{
+    position: fixed;
+    /* background-color: #000; */
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+    z-index: 9;
+    mix-blend-mode: difference;
+    
+}
+
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    /* padding-left: 20px; */
+    margin-left: 20px;
+    left: 500px;
+    mix-blend-mode: difference;
+    /* border: 2px solid white; 
+    border-radius: 5px; */
+}
+nav i{
+    margin-left: 413px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+/* Bottom Line Effect */
+nav a::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ffcc00;
+    transition: width 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* Hover Effect */
+nav a:hover::after {
+    width: 100%;
+}
+
+span{
+   font-weight: 400;
+   font-size: 16px;
+}
+h1{
+    font-family: arial;
+    color: #ffffff63;
+    position: absolute;
+    font-size: 150px;
+    top: 47%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.5s;
+}
+h1:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+
+}
+#head{
+    color: #ffffff;
+    font-size: 150px;
+    top: 47%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.5s;
+}
+#head:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff63;
+    text-stroke: 2px #ffffff63;
+}
+.devh1{
+    position: absolute;
+    font-size: 100px;
+    color: #ffcc006c;
+    top: 110%;
+    left: 63%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.5s;
+    
+}
+.devh1:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px #ffcc006c;
+    text-stroke: 2px #ffcc006c;
+}
+#dev{
+    font-size: 100px;
+    color: #ffcc00;
+    top: 110%;
+    left: 63%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.5s;
+    
+    
+}
+#dev:hover{
+    color: transparent;
+}
+
+
+#page-2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./jez-timms-HauxSOFvh6k-unsplash.jpg);
+    background-size: contain;
+    color: #fff;
+    position: relative;
+}
+h3{
+    padding-top: 70px;
+    padding-left: 50px;
+    font-size: 30px;
+}
+span{
+    font-size: 30px;
+    color: olive;
+}
+#div{
+    width: 50%;
+    height: 20%;
+    /* position: absolute; */
+    background-color: rgba(163, 163, 163, 0.188);
+    left: 5%;
+    top: 30%;
+    padding-left: 25px;
+    padding-top: 5px;
+    border-radius: 30px;
+    /* filter: blur(30px); */
+    backdrop-filter: blur(10px);
+    margin-left: 50px;
+   
+}
+/* #logos{
+    width: 100%;
+    height: 100%;
+    background-color: #ffcc00;
+} */
+#logos img{
+    height: 100px;
+    width: 100px;
+    transition: all ease 1.5s;
+    cursor: pointer;
+}
+#logos img:hover{
+    transform: rotate(90deg);
+}
+
+#div2{
+    background-color: rgba(163, 163, 163, 0.188);
+    padding-left: 25px;
+    padding-top: 5px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 170px;
+    padding-right: 25px;
+    margin-left: 50px;
+   
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    padding: 8px 16px; 
+    /* border: 2px solid white;  */
+    display: inline-block; 
+    border-radius: 5px; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    margin-top: 22px;
+    margin-left: 60px;
+    font-family: Golden Way;
+}
+
+#page-3{
+    width: 100%;
+    background-color: #000;
+
+}
+
+#artWork{
+    height: 100vh;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+     /* filter: blur(50px); */
+    margin-top: 20%;
+    margin-left: 5%;
+}
+#work{
+    font-size: 30px;
+    color: orchid;
+    text-transform: capitalize;
+    font-family: golden_way;
+    padding: 10px;
+    /* border: 2px solid orchid; 
+    border-radius: 5px;
+    display: inline-block;  */
+}
+.project{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    
+}
+.project-prt1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.project-prt2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.project img{
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    transition: all ease 0.3s;
+    
+}
+.project img:hover{
+    transform: scale(1.1);
+}
+
+#about{
+    margin-top: 120px;
+    font-size: 110px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: golden_way;
+    
+}
+#page-3 h1{
+    margin-top: 850px;
+    text-decoration: line-through;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: Golden Way;
+    color: olive;
+}
+
+#page-4{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+
+}
+#page-4 h2{
+    color: #fff;
+    font-size: 100px;
+    font-family: arial;
+    text-transform: capitalize;
+    padding-top: 120px;
+    text-align: center;
+}
+#page-4 a{
+    
+    color: olive;
+}
+
+#page-4 h5{
+    position: absolute;
+    left: 50%; 
+    bottom: -373%;
+    letter-spacing: 0.5px;
+    font-family: golden_way;
+    font-weight: 300;
+    transform: translate(-50%,-50%);
+}
+
+#page-4 i{
+    color: red;
+    font-size: 20px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff7eb3, orchid);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ff758c, orchid);
+}
+
+
+
+        
