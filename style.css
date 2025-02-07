@@ -168,7 +168,6 @@ h1:hover{
     background-size: contain;
     color: #fff;
     position: relative;
-    overflow: hidden;
 }
 h3{
     padding-top: 70px;
@@ -240,7 +239,7 @@ h4 {
 #page-3{
     width: 100%;
     background-color: #000;
-    overflow: hidden;
+    
 }
 
 #artWork{
@@ -313,7 +312,8 @@ h4 {
     width: 100%;
     height: 100vh;
     background-color: #000;
-    overflow: hidden;   
+    overflow: hidden;
+      
 }
 #page-4 h2{
     color: #fff;
